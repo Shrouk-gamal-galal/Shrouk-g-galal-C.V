@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Shrouk Gamal – CV</title>
+<meta name="description" content="CV of Shrouk Gamal – Biotechnology Graduate.">
+<meta name="author" content="Shrouk Gamal">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --navy:#0b2b4a;
+    --blue:#0f6ad9;
+    --bg:#f7f9fc;
+    --card:#ffffff;
+    --border:#e5e7eb;
+    --text:#111827;
+    --muted:#6b7280;
+    --accent:#2563eb;
+  }
+  body {
+    margin:0; font-family:'Inter',sans-serif;
+    background:var(--bg); color:var(--text);
+    -webkit-print-color-adjust:exact; print-color-adjust:exact;
+  }
+  .container { max-width: 1100px; margin: 28px auto; padding: 0 16px; }
+  .header {
+    display:flex; gap:24px; align-items:center; flex-wrap:wrap;
+    background:linear-gradient(135deg,var(--navy),#113a65);
+    color:#fff; border-radius:20px; padding:24px;
+  }
+  .avatar { width:120px;height:120px;border-radius:50%;overflow:hidden;border:3px solid rgba(255,255,255,.6); }
+  .avatar img { width:100%;height:100%;object-fit:cover; }
+  .title h1 { margin:0;font-size:30px;font-weight:700; }
+  .sub { margin-top:6px;font-size:15px;opacity:.9; }
+  .contact { margin-top:10px; display:flex; flex-wrap:wrap; gap:10px 12px; font-size:14px; }
+  .contact a { color:#fff;text-decoration:none; }
+  .contact a:hover { text-decoration:underline; }
+  .chip { background: rgba(255,255,255,.12); border:1px solid rgba(255,255,255,.28); padding:6px 10px; border-radius:999px; }
+  .actions { margin-left:auto; display:flex; gap:8px; }
+  .btn { background:#fff; color:var(--navy); border:none; padding:8px 14px; border-radius:8px; cursor:pointer; font-weight:600; }
+  .btn:hover { transform:scale(1.05); }
+  .about { margin-top:20px; padding:18px; background:#fff; border:1px solid var(--border); border-radius:16px; box-shadow:0 4px 14px rgba(0,0,0,.06); }
+  .about h2 { margin:0 0 10px; color:var(--blue); font-size:18px; }
+  .grid { display:grid; grid-template-columns: 1fr 2fr; gap:22px; margin-top:22px; }
+  .card { background:var(--card); border:1px solid var(--border); border-radius:16px; padding:18px; transition:0.2s; }
+  .card:hover { box-shadow:0 4px 18px rgba(0,0,0,0.08); transform:translateY(-2px); }
+  .card h2 { margin:0 0 12px; font-size:16px; color:var(--blue); text-transform:uppercase; display:flex; align-items:center; gap:6px; }
+  .list { margin:0; padding-left:18px; }
+  .list li { margin:6px 0; }
+  .role { font-weight:600; }
+  .meta { color:var(--muted); font-size:14px; }
+  .badges span { display:inline-block; background:#eef4ff; color:var(--blue); padding:6px 10px; border-radius:999px; margin:4px 6px 0 0; border:1px solid #d8e6ff; font-size:13px; }
+  .lang-bar { background:#e5e7eb; border-radius:6px; overflow:hidden; margin:6px 0; height:10px; }
+  .lang-fill { height:100%; background:var(--accent); }
+  /* Dark mode */
+  body.dark { --bg:#111827; --card:#1f2937; --text:#f9fafb; --border:#374151; --muted:#9ca3af; }
+  body.dark .header { background:linear-gradient(135deg,#000,#1f2937); }
+  body.dark .btn { background:#374151; color:#fff; }
+  body.dark .about { background:#1f2937; }
+  @media (max-width: 800px) {
+    .grid { grid-template-columns:1fr; }
+    .actions { display:none; }
+  }
+  @media print {
+    body { background:#fff !important; color:#000 !important; }
+    .btn,.actions { display:none !important; }
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <div class="avatar">
+        <img src="Shrouk Gamal.jpg" alt="Shrouk Gamal">
+      </div>
+      <div class="title">
+        <h1>Shrouk Gamal</h1>
+        <div class="sub">Biotechnology Graduate (Expected 2025)</div>
+        <div class="contact">
+          <span class="chip">📍 Fayoum, Egypt</span>
+          <span class="chip"><a href="https://wa.me/201090550814" target="_blank">📞 +20 1090550814</a></span>
+          <span class="chip"><a href="mailto:shrouk.gamal.5811@gmail.com">📧 shrouk.gamal.5811@gmail.com</a></span>
+          <span class="chip"><a href="https://www.linkedin.com/in/shrouk-gamal-54498235a/" target="_blank">🔗 LinkedIn</a></span>
+        </div>
+      </div>
+      <div class="actions">
+        <button class="btn" onclick="window.print()">Download PDF</button>
+        <button class="btn" onclick="toggleDark()">Toggle Dark</button>
+      </div>
+    </div>
+
+    <!-- About Me -->
+    <div class="about">
+      <h2>👩‍🔬 About Me</h2>
+      <p>I am a passionate Biotechnology graduate eager to contribute to the medical and research fields. Skilled in laboratory techniques, problem-solving, and teamwork, with strong dedication to continuous learning and professional growth. My goal is to make a positive impact in healthcare and scientific innovation.</p>
+    </div>
+
+    <!-- Main Content -->
+    <div class="grid">
+      <div class="card">
+        <h2>🎯 Objective</h2>
+        <p>Motivated and detail-oriented Biotechnology graduate (Expected 2025) with a strong academic background and hands-on laboratory training. Passionate about contributing to medical, research, and laboratory fields by applying biotechnology knowledge and dedication to continuous learning.</p>
+      </div>
+
+      <div class="card">
+        <h2>🎓 Education</h2>
+        <p><span class="role">B.Sc. in Agricultural Sciences – Biotechnology Department</span><br/>
+        Fayoum University, Egypt <span class="meta">| Expected Graduation: 2025</span><br/>
+        Grade: <b>Very Good</b> • Rank: <b>12th</b><br/>
+        Graduation Project: <i>Using Nuclear Energy and Nano-Magnet Technology for Water Purification</i></p>
+      </div>
+
+      <div class="card">
+        <h2>🛠️ Skills</h2>
+        <div class="badges">
+          <span>Sample Collection</span><span>Blood Withdrawal</span><span>DNA Isolation</span>
+          <span>Lab Device Operation</span><span>Tissue Culture</span><span>Bioinformatics</span>
+          <span>Teamwork</span><span>Problem-Solving</span><span>Communication</span>
+          <span>MS Office</span><span>Adaptability</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>🧪 Trainings & Internships</h2>
+        <div class="role">Abshway General Hospital – Laboratory Training</div>
+        <div class="meta">Fayoum, Egypt – 2024</div>
+        <ul class="list">
+          <li>Performed blood withdrawal and sample collection.</li>
+          <li>Trained on lab devices and test analysis.</li>
+          <li>Gained experience in patient interaction and result interpretation.</li>
+        </ul>
+        <div class="role">National Research Centre (NRC)</div>
+        <div class="meta">Dokki, Egypt – 2024</div>
+        <ul class="list"><li>15-day training in Plant Tissue Culture.</li></ul>
+        <div class="role">Institute of Genetic Engineering and Biotechnology</div>
+        <div class="meta">Cairo University – 2024</div>
+        <ul class="list"><li>15-day training in Bioinformatics and DNA Isolation Techniques.</li></ul>
+      </div>
+
+      <div class="card">
+        <h2>📜 Certificates</h2>
+        <ul class="list">
+          <li>Certificate of Training – National Research Centre (2024)</li>
+          <li>Certificate of Training – Institute of Genetic Engineering and Biotechnology, Cairo University (2024)</li>
+          <li>Certificate of Training – Agricultural Syndicate (2024)</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>🌱 Field Visits</h2>
+        <ul class="list">
+          <li>Institute of Genetic Engineering and Biotechnology – Cairo University (2024)</li>
+          <li>Institute of Plant Tissue Culture and Genetic Engineering – Sadat University (2024)</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>🌐 Languages</h2>
+        <p>Arabic</p>
+        <div class="lang-bar"><div class="lang-fill" style="width:100%"></div></div>
+        <p>English</p>
+        <div class="lang-bar"><div class="lang-fill" style="width:80%"></div></div>
+      </div>
+
+      <div class="card">
+        <h2>📚 Courses</h2>
+        <ul class="list">
+          <li>Bioinformatics Fundamentals – Cairo University</li>
+          <li>Plant Tissue Culture – NRC</li>
+          <li>Medical Laboratory Practices – Abshway General Hospital</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>💡 Projects</h2>
+        <p><b>Graduation Project:</b> Using Nuclear Energy and Nano-Magnet Technology for Water Purification.<br/>
+        Developed innovative approach combining nuclear-based sterilization and nano-magnetic separation for clean water solutions.</p>
+      </div>
+
+      <div class="card">
+        <h2>🏆 Achievements</h2>
+        <ul class="list">
+          <li>Ranked among the top 12 students in the Biotechnology Department.</li>
+          <li>Demonstrated strong adaptability and problem-solving in academic and laboratory projects.</li>
+          <li>Actively participated in specialized training programs and scientific research visits.</li>
+          <li>Committed to continuous professional growth, self-learning, and innovation.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>🎨 Hobbies & Interests</h2>
+        <ul class="list">
+          <li>Reading scientific articles and books</li>
+          <li>Volunteering and community service</li>
+          <li>Traveling & exploring new cultures</li>
+          <li>Technology & self-learning</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+<script>
+function toggleDark(){
+  document.body.classList.toggle("dark");
+}
+</script>
+</body>
+</html>
